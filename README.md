@@ -6,7 +6,7 @@
 
 Projeto construído no evento Next Level Week da Rocketseat.
 
-[🔗 Clique aqui para acessar](https://https://will-ifes.github.io/Dev_Rocket/)
+[🔗 Clique aqui para acessar](https://will-ifes.github.io/Dev_Rocket/)
 
 
 ## 😍 Tecnologias 🔨🔧

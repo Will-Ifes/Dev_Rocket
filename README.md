@@ -6,24 +6,30 @@ Página com jogos favoritos, canais de streaming e links sociais, construída na
 
 ![Prévia da página](.github/preview.png)
 
-## Contexto
-
 Projeto de formação da Rocketseat, personalizado durante meu aprendizado de HTML e CSS. Não representa um produto comercial.
 
-## O que o projeto apresenta
+## Destaques
 
 - Organização do conteúdo em seções e listas de cartões.
 - Imagens e links para jogos e canais de streaming.
 - Estilização da página com caixas, espaçamentos e animações.
 
-## Por dentro do código
+<details>
+<summary><strong>Organização e código</strong></summary>
+
+### Por dentro do código
 
 | Arquivo | Responsabilidade |
 | --- | --- |
 | [`index.html`](index.html) | Conteúdo, links e estrutura semântica. |
 | [`styles.css`](styles.css) | Layout e identidade visual. |
 
-## Executar localmente
+</details>
+
+<details>
+<summary><strong>Executar e consultar</strong></summary>
+
+### Executar localmente
 
 Clone o projeto e sirva a pasta com um servidor estático. Com Python 3 instalado:
 
@@ -35,9 +41,14 @@ python3 -m http.server 8080
 
 Abra http://localhost:8080. Não há instalação de dependências ou etapa de build.
 
-## Escopo e evolução
+</details>
 
-A página é estática; imagens de terceiros dependem dos serviços de origem. Próximas melhorias possíveis: revisar navegação por teclado e comportamento em telas menores.
+<details>
+<summary>Escopo e referências</summary>
+
+A página é estática; imagens de terceiros dependem dos serviços de origem.
+
+</details>
 
 ---
 

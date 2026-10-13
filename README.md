@@ -1,24 +1,44 @@
-# NLW eSports 
+# NLW eSports · página pessoal
 
-![preview](./.github/preview.png)
+Página com jogos favoritos, canais de streaming e links sociais, construída na trilha Explorer do evento Next Level Week da Rocketseat.
 
-> Trilha Explorer
+**HTML · CSS**
 
-Projeto construído no evento Next Level Week da Rocketseat.
+![Prévia da página](.github/preview.png)
 
-[🔗 Clique aqui para acessar](https://will-ifes.github.io/Dev_Rocket/)
+## Contexto
 
+Projeto de formação da Rocketseat, personalizado durante meu aprendizado de HTML e CSS. Não representa um produto comercial.
 
-## 😍 Tecnologias 🔨🔧
+## O que o projeto apresenta
 
-- HTML
-- CSS
-- Git e Github
+- Organização do conteúdo em seções e listas de cartões.
+- Imagens e links para jogos e canais de streaming.
+- Estilização da página com caixas, espaçamentos e animações.
 
-## 🤔 O que aprendi ?
+## Por dentro do código
 
-Aprendi a como estruturar e criar uma página HTML a partir do zero, depois vi como estilizar essa página com o CSS, criando camadas por caixas com Grid e Flexbox, criando bordas, preenchimentos, fundos, alterando cores, animações e muito mais, por fim aprendi a criar um link público da minha página da Web com o GitHub, entre outras coisas...
+| Arquivo | Responsabilidade |
+| --- | --- |
+| [`index.html`](index.html) | Conteúdo, links e estrutura semântica. |
+| [`styles.css`](styles.css) | Layout e identidade visual. |
 
-## 💙 Contato
+## Executar localmente
 
-wildembergdejesusolieira@gmail.com
+Clone o projeto e sirva a pasta com um servidor estático. Com Python 3 instalado:
+
+```bash
+git clone https://github.com/Will-Ifes/Dev_Rocket.git
+cd Dev_Rocket
+python3 -m http.server 8080
+```
+
+Abra http://localhost:8080. Não há instalação de dependências ou etapa de build.
+
+## Escopo e evolução
+
+A página é estática; imagens de terceiros dependem dos serviços de origem. Próximas melhorias possíveis: revisar navegação por teclado e comportamento em telas menores.
+
+---
+
+Mantido por **Will Oliveira** · [Perfil](https://github.com/Will-Ifes) · [LinkedIn](https://www.linkedin.com/in/wildemberg-de-jesus-oliveira/)

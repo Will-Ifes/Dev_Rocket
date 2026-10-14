@@ -1,160 +1,211 @@
-* {
+/* Identidade do NLW eSports: fundo escuro, borda em degradê e Inter */
+:root {
+    --fundo: #121214;
+    --caixa: #2a2634;
+    --borda: #443e54;
+    --texto: #ffffff;
+    --texto-suave: #c4c4cc;    /* #a1a1aa ficava no limite; este passa folgado no AA */
+    --degrade: linear-gradient(90deg, #9572fc 0%, #43e7ad 50.52%, #e2d45c 100%);
+    --verde: #43e7ad;
+    --raio: 10px;
+}
+
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-section ul {
-    margin-top: 24px;
-    list-style: none;
-}
-
 body {
-    background-image: url(./assets/bg.jpg);
-    background-position: top center;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-color: #121214;
+    min-height: 100vh;
+    font-family: 'Inter', system-ui, sans-serif;
+    line-height: 1.6;
+    color: var(--texto);
+    background: var(--fundo) url(./assets/bg.webp) top center / 100% auto no-repeat;
 }
 
-body * {
-    font-family: 'Inter', sans-serif;
-    line-height: 160%;
+img,
+svg {
+    display: block;
 }
 
-header {
-    margin-top: 32px;
-    height: calc(120px + 32px);
+a {
+    color: inherit;
 }
 
-header div {
-    width: 120px;
-    margin: auto;
-    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
-    border-radius: 50%;
+:focus-visible {
+    outline: 3px solid var(--verde);
+    outline-offset: 4px;
+    border-radius: 8px;
+}
 
-    display: flex;
+/* Perfil */
+.perfil {
+    padding: 48px 16px 8px;
+    text-align: center;
+    animation: deCima 0.7s 0.2s backwards;
+}
+
+.avatar {
+    width: 128px;
+    margin: 0 auto 16px;
     padding: 4px;
-
-    transition: transform .3s;
-}
-
-header div:hover {
-    transform: scale(1.1)
-}
-
-header div img {
-    width: 100%;
     border-radius: 50%;
-    
+    background: var(--degrade);
+    transition: transform 0.3s;
 }
 
-main {
-    max-width: 580px;
-    width: 90%;
-    margin: 32px auto;
+.avatar:hover {
+    transform: scale(1.06) rotate(-3deg);
+}
 
+.avatar img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid var(--fundo);
+}
+
+.perfil h1 {
+    font-size: clamp(1.75rem, 5vw, 2.25rem);
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+.perfil p {
+    color: var(--texto-suave);
+}
+
+/* Seções */
+main {
     display: grid;
     gap: 24px;
-
-    
-
+    width: min(580px, 100% - 32px);
+    margin: 32px auto;
 }
 
 section {
-    color: white; 
-    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
     padding-top: 4px;
-    border-radius: 10px;
+    border-radius: var(--raio);
+    background: var(--degrade);
+    animation: deBaixo 0.7s backwards;
 }
 
-section div {
-    background-color: #2A2634;
-    padding: 24px 32px 32px 32px;
+section:nth-child(2) { animation-delay: 0.15s; }
+section:nth-child(3) { animation-delay: 0.3s; }
+
+.caixa {
+    padding: 24px clamp(20px, 6vw, 32px) 32px;
     border-radius: 8px;
-    
+    background: var(--caixa);
 }
 
 section h2 {
-    letter-spacing: -0.47px;
-
-    color: #FFFFFF;
+    margin-bottom: 4px;
+    font-size: 1.5rem;
+    letter-spacing: -0.02em;
+    line-height: 1.25;
 }
 
 section p {
-    letter-spacing: -0.18px;
-    color: #A1A1AA;
+    color: var(--texto-suave);
 }
 
 section ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px; /*Só funciona no flex e grid, serve para dar espaço*/
+    gap: 16px;
     margin-top: 24px;
+    list-style: none;
 }
 
-section ul li {
-    transition: transform .3s;
+/* Jogos e canais: capa + nome visível */
+.jogos a,
+.canais a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: transform 0.3s;
 }
 
-section ul li:hover {
-    transform: scale(1.1);
+.jogos a:hover,
+.canais a:hover {
+    transform: translateY(-4px) scale(1.04);
 }
 
-.game-list img {
-    width: 90px;
+.jogos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 96px));
+}
+
+.jogos img {
+    width: 100%;
+    height: auto;
     border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
 }
 
-.channel-list img {
+.canais img {
+    width: 72px;
+    height: auto;
     border-radius: 50%;
-    width: 70px;
-    border: 1px solid #443E54;
+    border: 2px solid var(--borda);
+    transition: border-color 0.3s;
 }
 
-/* Animation*/ 
-
-header div {
-    animation: fromTop .7s .2s backwards;
-     
+.canais a:hover img {
+    border-color: var(--verde);
 }
 
-main section {
-    animation: fromBottom .7s backwards;
+/* Redes: botões com ícone e nome */
+.redes {
+    gap: 12px;
 }
 
-main section:nth-child(1) {
-    animation-delay: 0;
+.redes a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 44px;
+    padding: 8px 16px;
+    border: 1px solid var(--borda);
+    border-radius: 999px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: border-color 0.3s, background-color 0.3s, transform 0.3s;
 }
 
-main section:nth-child(2) {
-    animation-delay: .3s;
+.redes a:hover {
+    border-color: var(--verde);
+    background: rgba(67, 231, 173, 0.08);
+    transform: translateY(-2px);
 }
 
-main section:nth-child(3) {
-    animation-delay: .6s;
+/* Rodapé */
+.rodape {
+    padding: 8px 16px 48px;
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--texto-suave);
 }
 
-@keyframes fromTop {
-    from {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-
-    to{
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* Animações */
+@keyframes deCima {
+    from { opacity: 0; transform: translateY(-30px); }
 }
 
-@keyframes fromBottom {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
+@keyframes deBaixo {
+    from { opacity: 0; transform: translateY(30px); }
+}
 
-    to{
-        opacity: 1;
-        transform: translateY(0);
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
     }
 }

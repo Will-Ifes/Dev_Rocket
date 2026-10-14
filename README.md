@@ -9,7 +9,11 @@ Página com jogos favoritos, canais de streaming e links sociais, construída na
 **HTML · CSS** · [Ver online](https://will-ifes.github.io/Dev_Rocket/)
 
 <p align="center">
-  <img src="./.github/demo.gif" alt="Demonstração: o cursor passa pela foto, pelas capas dos jogos, pelos canais e pelos botões de redes sociais, mostrando os efeitos de hover." width="720" />
+  <a href="https://will-ifes.github.io/Dev_Rocket/">
+    <img src="./.github/demo.gif" alt="Demonstração da página revisada com jogos, canais e redes sociais. Clique para abrir o site." width="720" />
+  </a>
+  <br />
+  <sub>Clique na demonstração para abrir a página publicada.</sub>
 </p>
 
 Projeto de formação da Rocketseat, personalizado durante meu aprendizado de HTML e CSS. Não representa um produto comercial.

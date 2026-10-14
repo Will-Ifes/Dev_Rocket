@@ -6,9 +6,15 @@
 
 Página com jogos favoritos, canais de streaming e links sociais, construída na trilha Explorer do evento Next Level Week da Rocketseat.
 
-**HTML · CSS**
+**HTML · CSS** · [Ver online](https://will-ifes.github.io/Dev_Rocket/)
 
-![Prévia da página](.github/preview.png)
+<p align="center">
+  <a href="https://will-ifes.github.io/Dev_Rocket/">
+    <img src="./.github/preview.png" alt="Prévia da página NLW eSports. Clique para visitar o site e explorar jogos, canais e redes." width="720" />
+  </a>
+  <br />
+  <sub>Clique na prévia para abrir a página publicada.</sub>
+</p>
 
 Projeto de formação da Rocketseat, personalizado durante meu aprendizado de HTML e CSS. Não representa um produto comercial.
 

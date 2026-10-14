@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./.github/readme-cover.svg" alt="NLW eSports: Jogos, comunidades e uma página pessoal." width="100%" />
+</p>
+
 # NLW eSports · página pessoal
 
 Página com jogos favoritos, canais de streaming e links sociais, construída na trilha Explorer do evento Next Level Week da Rocketseat.
@@ -7,6 +11,13 @@ Página com jogos favoritos, canais de streaming e links sociais, construída na
 ![Prévia da página](.github/preview.png)
 
 Projeto de formação da Rocketseat, personalizado durante meu aprendizado de HTML e CSS. Não representa um produto comercial.
+
+## Explore o diferencial
+
+| Ponto de entrada | O que observar |
+| --- | --- |
+| [Composição visual](styles.css) | Veja como seções e cartões organizam jogos, canais e redes sociais. |
+| [Estrutura da página](index.html) | Listas e links dão forma ao conteúdo de uma página estática. |
 
 ## Destaques
 

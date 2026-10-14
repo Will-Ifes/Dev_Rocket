@@ -6,11 +6,27 @@
 
 Página com jogos favoritos, canais de streaming e links sociais, construída na trilha Explorer do evento Next Level Week da Rocketseat.
 
-**HTML · CSS**
+**HTML · CSS** · [Ver online](https://will-ifes.github.io/Dev_Rocket/)
 
-![Prévia da página](.github/preview.png)
+<p align="center">
+  <img src="./.github/demo.gif" alt="Demonstração: o cursor passa pela foto, pelas capas dos jogos, pelos canais e pelos botões de redes sociais, mostrando os efeitos de hover." width="720" />
+</p>
 
 Projeto de formação da Rocketseat, personalizado durante meu aprendizado de HTML e CSS. Não representa um produto comercial.
+
+## O que mudou na revisão
+
+| Antes | Depois |
+| --- | --- |
+| Sem `h1` e título da aba "Will nlw" | Nome e bio no topo, título descritivo |
+| Ícones de redes sem nome acessível e Facebook vindo de um site de terceiros, sem `alt` | Botões com ícone SVG próprio e nome visível: GitHub, LinkedIn e Instagram |
+| Canais de streamers desatualizados | Rocketseat, Ei Nerd e Aqueles Caras |
+| Jogos e canais só com imagem | Capa com o nome visível embaixo, lido também pelo leitor de tela |
+| `target="_blank"` sem `rel` | `rel="noopener noreferrer"` em todos os links externos |
+| Fundo `bg.jpg` de 517 KB | `bg.webp` de 9 KB |
+| Sem foco visível e com animação sempre ligada | Foco destacado em verde e animações que respeitam `prefers-reduced-motion` |
+
+**Validação:** axe-core sem violações e sem rolagem horizontal em 375px, 768px e 1366px.
 
 ## Explore o diferencial
 

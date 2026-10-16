@@ -1,5 +1,7 @@
 <p align="center">
-  <img src="./.github/readme-cover.svg" alt="NLW eSports: Jogos, comunidades e uma página pessoal." width="100%" />
+  <a href="https://will-ifes.github.io/Dev_Rocket/">
+    <img src="./.github/readme-cover.svg?v=20261016" alt="NLW eSports: Jogos, comunidades e uma página pessoal." width="100%" />
+  </a>
 </p>
 
 # NLW eSports · página pessoal
